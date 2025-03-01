@@ -17,10 +17,14 @@ const Contact = () => {
         <div className="lg:w-2/3 w-full">
           <Form />
         </div>
-        <div className="lg:block hidden w-1/3  bg-[url('/Asset 1islamic-pattern-1.png')] bg-cober bg-center bg-fixed">
-          <Image src="/Asset 1islamic-pattern-1.png" width={700} height={900} className="opacity-50 absolute bottom-[60] right-[-120]"/>
-        </div>
-      </div>
+        <div className="lg:block hidden w-1/3 overflow-hidden relative">
+  <Image 
+    src="/Asset 1islamic-pattern-1.png" 
+    width={700} 
+    height={900} 
+    className="opacity-50 absolute bottom-0 right-0 max-w-full"
+  />
+</div>
     </div>
   );
 };
