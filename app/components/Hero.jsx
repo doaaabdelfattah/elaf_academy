@@ -5,11 +5,9 @@ import { motion } from "motion/react"
 
 const Hero = () => {
   return (
-    <div className="h-[100dvh] relative bg-[url('/Hero-image.jpg')] bg-cover bg-center bg-fixed" id="home">
+    <div className="h-[100dvh] relative bg-[url('/Hero-image.jpg')] bg-cover bg-center md:bg-fixed" id="home">
       {/* Black overlay */}
       <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
-
-      {/* Navbar */}
 
       {/* Content Wrapper */}
       <div className="relative h-full flex items-center justify-center flex-col md:flex-row z-10">

@@ -10,7 +10,7 @@ const AboutAcademy = () => {
 
 <div className='flex items-center flex-col py-9 gap-10 mx-20 px-20'>
 
-<Image src="/Quraan-aya-white.png"  width={800} height={100} className='z-50 '/>
+<Image src="/Quraan-aya-white.png"  width={800} height={100} className='z-50 max-sm:w-full'/>
     <p className='text-center leading-loose text-lg tracking-wider z-50 text-white lg:block hidden'>
 
 
