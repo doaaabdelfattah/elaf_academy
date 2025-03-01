@@ -32,8 +32,8 @@ const Services = () => {
             <div className="flex  items-center">{service.icon}</div>
             <div>
 
-            <h3 className="text-4xl text-gray-800">{service.title}</h3>
-            <p className="text-gray-600 text-lg mt-2">{service.description}</p>
+            <h3 className="lg:text-4xl text-2xl text-gray-800">{service.title}</h3>
+            <p className="text-gray-600 lg:text-lg text-base mt-2">{service.description}</p>
             </div>
             
           </div>

@@ -7,25 +7,25 @@ import { RiInstagramFill } from "react-icons/ri";
 import { HiArrowSmRight } from "react-icons/hi";
 const Footer = () => {
   return (
-    <section className="w-full bg-mainGreen border-t-[29px] min-h-fit relative bg-[url('/Islamic-Pattern-Footer.png')] bg-cover bg-center bg-fixed">
+    <section className="w-full bg-mainGreen border-t-[29px] min-h-fit relative bg-[url('/Islamic-Pattern-Footer.png')] bg-cover bg-center md:bg-fixed">
 
-       <div className="absolute inset-0 bg-black opacity-20 z-0"></div>
+       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
 
       <div className="mx-10 mt-12 pb-14 flex flex-col lg:flex-row items-center justify-between z-50 relative text-white gap-10  border-b border-white">
-        <div className="lg:w-1/ mx-12 w-full flex flex-col gap-4">
+        <div className="lg:w-1/2 mx-12 w-full flex flex-col gap-4">
           <Image src="/white logo.png" width={500} height={500} alt="alx logo" />
 
   
-          <p className="text-left text-xl font-light text-white leading-loose ">
+          <p className="text-left lg:text-xl font-light text-white leading-loose ">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
             dolores veritatis eos, quae quasi fugit voluptatibus minima eaque
             aliquam.
           </p>
         </div>
-        <div className="w-full lg:1/2 py-10 flex items-start  justify-around px-6 max-sm:grid max-sm:grid-cols-2 gap-10">
+        <div className="w-full lg:w-1/2 py-10 flex items-start  justify-around px-2 max-sm:grid max-sm:grid-cols-2 gap-10">
           {/* first Section =================== */}
          
-          <div className="flex flex-col text-left gap-5">
+          <div className="flex flex-col text-left gap-4">
             <h2 className="text-2xl ">Useful Links</h2>
             <ul className="text-md gap-3 flex flex-col tracking-wider">
               <li className="slide-up-hover flex items-center gap-1">
