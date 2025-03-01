@@ -1,5 +1,7 @@
+"use client";
 import { FaBookOpen, FaLanguage, FaMosque } from "react-icons/fa";
 import SectionHeader from "./reusable/SectionHeader";
+import { motion } from "motion/react"
 
 const Services = () => {
   const services = [
@@ -26,9 +28,11 @@ const Services = () => {
 
 <div className=" flex flex-col gap-5 lg:flex-row items-center justify-center">
 
-        <div className="mt-10 w-full flex flex-col lg:flex-row justify-between gap-16 items-center mx-auto">
+        <div className="mt-20 w-full grid lg:grid-cols-3 grid-cols-1 gap-16 mx-auto">
         {services.map((service, index) => (
-          <div key={index} className="flex flex-col items-center justify-around gap-7">
+          <motion.div key={index} className="flex flex-col items-center justify-around gap-7"  initial={{ y: 0, opacity: 0 }}
+          whileInView={{ y: -20, opacity: 1 }}
+          transition={{ duration: 0.6, delay: index*0.4 }}   >
             <div className="flex  items-center">{service.icon}</div>
             <div>
 
@@ -36,7 +40,7 @@ const Services = () => {
             <p className="text-gray-600 lg:text-lg text-base mt-2">{service.description}</p>
             </div>
             
-          </div>
+          </motion.div>
         ))}
       </div>
       </div>

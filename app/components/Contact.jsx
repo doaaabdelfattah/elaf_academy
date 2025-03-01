@@ -25,9 +25,9 @@ const Contact = () => {
         <div className="lg:block hidden w-1/3 overflow-hidden relative">
           <Image 
             src="/Asset 1islamic-pattern-1.png" 
-            width={700} 
+            width={900} 
             height={900} 
-            className="opacity-50 absolute bottom-0 right-0 object-cover"
+            className="opacity-50  bottom-0 right-0 object-cover"
             alt="Islamic Pattern"
           />
         </div>
