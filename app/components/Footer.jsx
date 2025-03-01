@@ -11,7 +11,7 @@ const Footer = () => {
 
        <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
 
-      <div className="md:mx-10 mx-5 mt-12 pb-14 flex flex-col lg:flex-row items-center justify-between z-50 relative text-white gap-10  border-b border-white">
+      <div className="md:mx-10 mx-5 mt-12 pb-10 flex flex-col lg:flex-row items-center justify-between z-50 relative text-white gap-10  border-b border-white">
         <div className="lg:w-1/2 mx-12 w-full flex flex-col gap-4">
           <Image src="/white logo.png" width={500} height={500} alt="alx logo" />
 
@@ -96,24 +96,11 @@ const Footer = () => {
 
 
 
-      <div className="text-white mx-20 py-10 md:py-4 flex flex-col md:flex-row justify-center  gap-4 text-sm font-normal z-50 relative ">
+      <div className="text-white mx-20 py-3 md:py-4 flex flex-col justify-center  text-sm font-normal z-50 relative ">
         <p className="text-center tracking-widest">
         © Copyright 2025 | All Rights Reserved.
         </p>
 
-        <div>
-          {/* <ul className="flex justify-evenly gap-5">
-            <li>
-              <Link href="/">Terms of Service</Link>
-            </li>
-            <li>
-              <Link href="/">Policy service</Link>
-            </li>
-            <li>
-              <Link href="/">Cookies Policy</Link>
-            </li>
-          </ul> */}
-        </div>
       </div>
     </section>
   );
