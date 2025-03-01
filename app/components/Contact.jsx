@@ -18,7 +18,7 @@ const Contact = () => {
           <Form />
         </div>
         <div className="lg:block hidden w-1/3  bg-[url('/Asset 1islamic-pattern-1.png')] bg-cober bg-center bg-fixed">
-          <Image src="/Asset 1islamic-pattern-1.png" width={700} height={900} className="opacity-50 absolute bottom-[60] right-[-160]"/>
+          <Image src="/Asset 1islamic-pattern-1.png" width={700} height={900} className="opacity-50 absolute bottom-[60] right-[-120]"/>
         </div>
       </div>
     </div>
