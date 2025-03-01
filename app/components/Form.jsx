@@ -48,7 +48,7 @@ const Form = () => {
             <div className="w-full">
               <label className="block text-md font-medium text-gray-700">Name</label>
               <input
-                className="p-3 border border-gray-400 rounded-md bg-white w-full outline-none"
+                className="p-2 border border-gray-400 rounded-md bg-white w-full outline-none"
                 type="text"
                 placeholder="Enter your name"
                 required
@@ -59,7 +59,7 @@ const Form = () => {
             <div className="w-full">
               <label className="block text-md font-medium text-gray-700">Email</label>
               <input
-                className="p-3 border border-gray-400 rounded-md bg-white w-full outline-none"
+                className="p-2 border border-gray-400 rounded-md bg-white w-full outline-none"
                 type="email"
                 placeholder="Enter your Email"
                 required
@@ -73,7 +73,7 @@ const Form = () => {
             <div className="w-full">
               <label className="block text-md font-medium text-gray-700">Phone Number</label>
               <input
-                className="p-3 border border-gray-400 rounded-md bg-white w-full outline-none"
+                className="p-2 border border-gray-400 rounded-md bg-white w-full outline-none"
                 type="tel"
                 placeholder="Enter your phone number"
                 required
@@ -84,7 +84,7 @@ const Form = () => {
             <div className="w-full">
               <label className="block text-md font-medium text-gray-700">Student Age</label>
               <input
-                className="p-3 border border-gray-400 rounded-md bg-white w-full outline-none"
+                className="p-2 border border-gray-400 rounded-md bg-white w-full outline-none"
                 type="number"
                 placeholder="Enter student age"
                 required
@@ -110,7 +110,7 @@ const Form = () => {
           <div>
             <label className="block text-md font-medium text-gray-700">Preferred Days</label>
             <input
-              className="p-3 border border-gray-400 rounded-md bg-white w-full outline-none"
+              className="p-2 border border-gray-400 rounded-md bg-white w-full outline-none"
               type="text"
               placeholder="Preferred days (e.g., Monday, Wednesday)"
               required
@@ -122,7 +122,7 @@ const Form = () => {
           <div>
             <label className="block text-md font-medium text-gray-700">Additional Notes</label>
             <textarea
-              className="w-full p-3 border border-gray-400 rounded-md bg-white outline-none"
+              className="w-full p-2 border border-gray-400 rounded-md bg-white outline-none"
               rows="4"
               placeholder="Additional notes"
               name="notes"

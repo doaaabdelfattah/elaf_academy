@@ -36,7 +36,7 @@ const Hero = () => {
               Our plans
               </button>
             </a>
-            <a href="#enroll">
+            <a href="#contact">
             <button className="mt-6 px-6 py-3 text-white border-white border-2 rounded-full text-lg hover:bg-mainGreen hover:text-white hover:scale-[1.05] transition-all duration-500 ">
               
               Enroll now
