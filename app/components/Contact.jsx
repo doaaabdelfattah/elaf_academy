@@ -22,7 +22,7 @@ const Contact = () => {
         </div>
 
         {/* Image Section */}
-        <div className="w-full h-full lg:inline-block hidden">
+        {/* <div className="w-full h-full lg:inline-block hidden">
           <Image 
             src="/Asset 1islamic-pattern-1.png" 
             width={900} 
@@ -30,7 +30,7 @@ const Contact = () => {
             className="opacity-50  bottom-0 right-0 object-cover"
             alt="Islamic Pattern"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
