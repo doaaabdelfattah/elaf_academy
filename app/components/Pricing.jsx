@@ -13,7 +13,7 @@ const PricingSection = () => {
         subtitle="Choose the best plan for your journey."
       />
 
-<div className="grid md:grid-cols-2 lg:grid-cols-4 place-items-center gap-10 mt-14">
+<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mt-10">
   {pricingPlans.map((plan, index) => (
     <motion.div
 
@@ -23,7 +23,7 @@ const PricingSection = () => {
     viewport={{ once: true }} // 👈 Each card animates with a small delay
     // viewport={{ once: true }}  // 👈 Ensures it only
       key={index}
-      className="rounded-2xl shadow-lg p-6 lg:border-double border-mainGreen border lg:border-2 clip-arch max-sm:w-[80%] h-full slide-up-hover duration-700 transition-all flex flex-col justify-between cursor-pointer gap-5"
+      className="rounded-2xl shadow-lg p-6 lg:border-double border-mainGreen border lg:border-2 clip-arch h-full slide-up-hover duration-700 transition-all flex flex-col justify-between cursor-pointer gap-5 hover:bg-mainGreen/10"
     >
       {/*=============  Price & description ================ */}
       <div className="flex flex-col flex-grow items-center justify-between  text-center gap-2 mt-10">

@@ -17,7 +17,7 @@ const SectionHeader = ({ subtitle, title,align="items-center", textAlign="text-c
      whileInView={{ y: 0, opacity: 1 }}
      transition={{ duration: 0.8, delay: 0.5 }}    
      className={`font-Prata inline-block 
-     text-5xl ${textAlign}`}
+     lg:text-5xl text-4xl ${textAlign}`}
      >
       {title}
   </motion.h2>

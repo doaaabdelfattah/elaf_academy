@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full px-[12%] py-10 scroll-mt-20 bg-no-repeat overflow-hidden"
+      className=" w-[85%] mx-auto py-10 scroll-mt-20 bg-no-repeat "
     >
       <SectionHeader
         title="Enroll in Our Courses Today"
@@ -15,14 +15,14 @@ const Contact = () => {
         description="Fill out the form below to begin your journey of learning Qur'an, Arabic, and Islamic Studies."
       />
       
-      <div className="flex flex-col lg:flex-row items-center justify-between relative">
+      <div className="flex flex-col w-full lg:flex-row items-center justify-between ">
         {/* Form Section */}
-        <div className="lg:w-2/3 w-full">
+        <div className="w-full">
           <Form />
         </div>
 
         {/* Image Section */}
-        <div className="lg:block hidden w-1/3 overflow-hidden relative">
+        <div className="w-full h-full lg:inline-block hidden">
           <Image 
             src="/Asset 1islamic-pattern-1.png" 
             width={900} 

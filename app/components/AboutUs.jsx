@@ -30,9 +30,10 @@ const AboutUs = () => {
 
           
           <motion.p       
-          initial={{ x: 0, opacity: 0 }}
-     whileInView={{ x: -20, opacity: 1 }}
-     transition={{ duration: 0.6, delay: 0.7 }}    className="text-lg mt-4 leading-relaxed">
+          initial={{ x: 20, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.7 }}    
+          className="text-lg mt-4 leading-relaxed">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
             impedit, exercitationem magni voluptatum labore deserunt consequatur
             vitae, molestias et tenetur cupiditate maiores quisquam quasi dolore
