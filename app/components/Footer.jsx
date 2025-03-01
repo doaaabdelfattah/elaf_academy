@@ -11,7 +11,7 @@ const Footer = () => {
 
        <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
 
-      <div className="mx-10 mt-12 pb-14 flex flex-col lg:flex-row items-center justify-between z-50 relative text-white gap-10  border-b border-white">
+      <div className="md:mx-10 mx-5 mt-12 pb-14 flex flex-col lg:flex-row items-center justify-between z-50 relative text-white gap-10  border-b border-white">
         <div className="lg:w-1/2 mx-12 w-full flex flex-col gap-4">
           <Image src="/white logo.png" width={500} height={500} alt="alx logo" />
 
@@ -22,7 +22,7 @@ const Footer = () => {
             aliquam.
           </p>
         </div>
-        <div className="w-full lg:w-1/2 py-10 flex items-start  justify-around px-2 max-sm:grid max-sm:grid-cols-2 gap-10">
+        <div className="w-full lg:w-1/2 py-10 flex items-start  justify-around px-2 max-sm:grid max-sm:grid-cols-1 gap-10 ">
           {/* first Section =================== */}
          
           <div className="flex flex-col text-left gap-4">
