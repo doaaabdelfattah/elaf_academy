@@ -33,11 +33,9 @@ const AboutUs = () => {
           initial={{ x: 20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.7 }}    
-          className="text-lg mt-4 leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            impedit, exercitationem magni voluptatum labore deserunt consequatur
-            vitae, molestias et tenetur cupiditate maiores quisquam quasi dolore
-            at tempora porro officiis aperiam?
+          className="text-lg mt-4 leading-loose tracking-wider">
+           Our academy offers a structured curriculum covering Quran recitation (Tajweed), memorization (Hifz), and Islamic studies, ensuring that students develop a deep understanding of the Quran and its teachings. Whether you are a beginner or looking to refine your recitation skills, our personalized learning approach caters to your needs.<br/>
+By embracing modern technology, we connect students with qualified scholars through one-on-one sessions, making Quranic education accessible to individuals across the globe. Our goal is to inspire a love for the Quran and Islamic knowledge while maintaining the traditional values of respect, patience, and dedication in learning.
           </motion.p>
         </div>
       </div>

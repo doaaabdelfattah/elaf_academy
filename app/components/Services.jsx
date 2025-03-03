@@ -7,7 +7,7 @@ const Services = () => {
   const services = [
     {
       title: "Qur'an Learning",
-      description: "Master Qur’anic recitation with Tajweed and memorization.",
+      description: "Memorize quran with tajweed and proper recitation.",
       icon: <FaBookOpen className="text-mainGreen text-7xl" />,
     },
     {
@@ -17,7 +17,7 @@ const Services = () => {
     },
     {
       title: "Islamic Studies",
-      description: "Explore Islamic teachings, history, and values.",
+      description: "Learn about the life of Prophet Muhammed ﷺ , du'aa and hadith",
       icon: <FaMosque className="text-mainGreen text-7xl" />,
     },
   ];

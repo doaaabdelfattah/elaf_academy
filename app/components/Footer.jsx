@@ -5,6 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { HiArrowSmRight } from "react-icons/hi";
+import { FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <section className="w-full bg-mainGreen border-t-[29px] min-h-fit relative bg-[url('/Islamic-Pattern-Footer.png')] bg-cover bg-center md:bg-fixed">
@@ -32,60 +33,39 @@ const Footer = () => {
               <HiArrowSmRight /> <Link href="#services">Our Services</Link>
               </li>
               <li className="slide-up-hover flex items-center gap-1">
-              <HiArrowSmRight /> <Link href="#Packages">Our Packages</Link>
+              <HiArrowSmRight /> <Link href="#pricing">Our Packages</Link>
               </li>
               <li className="slide-up-hover flex items-center gap-1">
-              <HiArrowSmRight /> <Link href="#services">Our Services</Link>
+              <HiArrowSmRight /> <Link href="#contact">Contact Us</Link>
               </li>
             </ul>
           </div>
-          {/* Second section =============== */}
- {/* <div className="flex flex-col text-left gap-5">
-            <h2 className="text-2xl ">Useful Links</h2>
-            <ul className="text-md gap-3 flex flex-col tracking-wider">
-              <li className="slide-up-hover flex items-center gap-1">
-              <HiArrowSmRight /> <Link href="#services">Our Services</Link>
-              </li>
-              <li className="slide-up-hover flex items-center gap-1">
-              <HiArrowSmRight /> <Link href="#Packages">Our Packages</Link>
-              </li>
-              <li className="slide-up-hover flex items-center gap-1">
-              <HiArrowSmRight /> <Link href="#services">Our Services</Link>
-              </li>
-            </ul>
-          </div> */}
-
-
-
-
-
-
 
 <div className="flex flex-col items-start gap-4">
   <h2 className="text-2xl">Contact</h2>
 
   {/* Social Icons */}
-  <div className="flex gap-3 items-center">
+  {/* <div className="flex gap-3 items-center">
     <Link href="/">
       <FaFacebook className="hover:text-white/70 duration-300 transition-all" size={30} />
     </Link>
     <Link href="/">
       <RiInstagramFill className="hover:text-white/70 duration-300 transition-all" size={30} />
     </Link>
-  </div>
+  </div> */}
 
   {/* Contact Info */}
   <div className="flex flex-col gap-2 text-md">
     <div className="flex items-center gap-2">
       <MdEmail size={20} />
-      <Link href="mailto:contact@example.com" className="hover:text-white/70 duration-300 transition-all">
-        contact@example.com
+      <Link href="mailto:elafacademy17@gmail.com" className="hover:text-white/70 duration-300 transition-all">
+      elafacademy17@gmail.com 
       </Link>
     </div>
     <div className="flex items-center gap-2">
-      <HiArrowSmRight size={20} />
+      <FaWhatsapp size={20} />
       <Link href="tel:+1234567890" className="hover:text-white/70 duration-300 transition-all">
-        +1 234 567 890
+      +20 15 5078417
       </Link>
     </div>
   </div>

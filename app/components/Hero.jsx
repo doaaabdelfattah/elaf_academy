@@ -26,7 +26,7 @@ const Hero = () => {
           <motion.p      initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.5 }} className="text-lg tracking-wide mt-4 font-Prata">
-            Join our structured Qur'an learning program designed for non-Arabic
+            Join our structured Qur'an learning program designed for non-Arab
           </motion.p>
           <div className="flex flex-col md:flex-row md:gap-5 gap-1 justify-center md:mt-10 mt-3">
             <a href="#pricing">

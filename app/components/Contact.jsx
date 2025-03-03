@@ -26,7 +26,7 @@ const Contact = () => {
           <Image 
             src="/Asset 1islamic-pattern-1.png" 
             width={900} 
-            height={900} 
+            height={900}
             className="opacity-50  bottom-0 right-0 object-cover"
             alt="Islamic Pattern"
           />
