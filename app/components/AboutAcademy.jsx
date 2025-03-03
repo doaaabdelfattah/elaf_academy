@@ -23,7 +23,7 @@ height={100}
 
 
 It is certainly We Who have revealed the Reminder, and it is certainly We Who will preserve it. <br/>
-— Dr. Mustafa Khattab, The Clear Quran
+
 
 </p>
 </div>
