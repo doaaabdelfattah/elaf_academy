@@ -110,17 +110,17 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             </a>
           </li>
           <li className="slide-up-hover">
-            <a className="menu-style" href="#features" onClick={closeMenu}>
-              Features
+            <a className="menu-style" href="#services" onClick={closeMenu}>
+              Services
             </a>
           </li>
           <li className="slide-up-hover">
             <a className="menu-style" href="#pricing" onClick={closeMenu}>
-              Pricing
+              Our Packages
             </a>
           </li>
           <li className="slide-up-hover">
-            <a className="menu-style" onClick={closeMenu}>
+            <a className="menu-style" href="#contact" onClick={closeMenu}>
               Contact us
             </a>
           </li>
