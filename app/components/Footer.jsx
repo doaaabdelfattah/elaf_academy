@@ -14,13 +14,11 @@ const Footer = () => {
 
       <div className="md:mx-10 mx-5 mt-12 pb-10 flex flex-col lg:flex-row items-center justify-between z-50 relative text-white gap-10  border-b border-white">
         <div className="lg:w-1/2 mx-12 w-full flex flex-col gap-4">
-          <Image src="/white logo.png" width={500} height={500} alt="alx logo" />
+          <Image src="/white logo.png" width={400} height={400} alt="alx logo" />
 
   
-          <p className="text-left lg:text-xl font-light text-white leading-loose ">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
-            dolores veritatis eos, quae quasi fugit voluptatibus minima eaque
-            aliquam.
+          <p className="text-left lg:text-md font-light text-white leading-relaxed ">
+          Our purpose is to inspire and educate individuals in the teachings of the Holy Quran, fostering a deep connection with its wisdom, values, and recitation to strengthen faith and character.
           </p>
         </div>
         <div className="w-full lg:w-1/2 py-10 flex items-start  justify-around px-2 max-sm:grid max-sm:grid-cols-1 gap-10 ">

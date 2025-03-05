@@ -17,7 +17,7 @@ const Form = () => {
     setResult("Sending....");
 
     const formData = new FormData(event.target);
-    formData.append("access_key", "ead27fcf-bfe0-4fb5-b737-70f7c3caf8ff");
+    formData.append("access_key", "607f3f69-6145-4ca6-9bfc-35b3aac7f5b7");
 
     // Append selected courses as a comma-separated string
     formData.append("courses", selectedCourses.map((course) => course.value).join(", "));
@@ -41,7 +41,7 @@ const Form = () => {
 
   return (
     <>
-      <form className="max-w-2xl mx-auto" onSubmit={onSubmit}>
+      <form suppressHydrationWarning className="max-w-2xl mx-auto" onSubmit={onSubmit}>
         <div className="grid grid-cols-1 gap-6 mt-10 mb-8">
           {/* Name & Email */}
           <div className="flex md:flex-row flex-col gap-4">
