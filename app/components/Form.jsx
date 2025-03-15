@@ -20,7 +20,10 @@ const Form = () => {
     formData.append("access_key", "607f3f69-6145-4ca6-9bfc-35b3aac7f5b7");
 
     // Append selected courses as a comma-separated string
-    formData.append("courses", selectedCourses.map((course) => course.value).join(", "));
+    formData.append(
+      "courses",
+      selectedCourses.map((course) => course.value).join(", ")
+    );
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -41,89 +44,145 @@ const Form = () => {
 
   return (
     <>
-      <form suppressHydrationWarning className="max-w-2xl mx-auto" onSubmit={onSubmit}>
+      <form
+        className="max-w-2xl mx-auto"
+        onSubmit={onSubmit}
+        aria-label="Registration Form"
+      >
         <div className="grid grid-cols-1 gap-6 mt-10 mb-8">
           {/* Name & Email */}
-          <div className="flex md:flex-row flex-col gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="w-full">
-              <label className="block text-md font-medium text-gray-700">Name</label>
+              <label
+                htmlFor="name"
+                className="block text-md font-medium text-gray-700"
+              >
+                Name
+              </label>
               <input
+                id="name"
                 className="p-2 border border-gray-400 rounded-md bg-white w-full outline-none"
                 type="text"
                 placeholder="Enter your name"
                 required
                 name="name"
+                autoComplete="name"
+                aria-required="true"
               />
             </div>
 
             <div className="w-full">
-              <label className="block text-md font-medium text-gray-700">Email</label>
+              <label
+                htmlFor="email"
+                className="block text-md font-medium text-gray-700"
+              >
+                Email
+              </label>
               <input
+                id="email"
                 className="p-2 border border-gray-400 rounded-md bg-white w-full outline-none"
                 type="email"
-                placeholder="Enter your Email"
+                placeholder="Enter your email"
                 required
                 name="email"
+                autoComplete="email"
+                aria-required="true"
               />
             </div>
           </div>
 
           {/* Phone & Age */}
-          <div className="flex md:flex-row flex-col gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="w-full">
-              <label className="block text-md font-medium text-gray-700">Phone Number</label>
+              <label
+                htmlFor="phone"
+                className="block text-md font-medium text-gray-700"
+              >
+                Phone Number
+              </label>
               <input
+                id="phone"
                 className="p-2 border border-gray-400 rounded-md bg-white w-full outline-none"
                 type="tel"
                 placeholder="Enter your phone number"
                 required
                 name="phone"
+                autoComplete="tel"
+                aria-required="true"
               />
             </div>
 
             <div className="w-full">
-              <label className="block text-md font-medium text-gray-700">Student Age</label>
+              <label
+                htmlFor="age"
+                className="block text-md font-medium text-gray-700"
+              >
+                Student Age
+              </label>
               <input
+                id="age"
                 className="p-2 border border-gray-400 rounded-md bg-white w-full outline-none"
                 type="number"
                 placeholder="Enter student age"
                 required
                 name="age"
+                min="1"
+                aria-required="true"
               />
             </div>
           </div>
 
           {/* Multi-Select Courses */}
           <div>
-            <label className="block text-md font-medium text-gray-700">Select Required Courses</label>
+            <label
+              htmlFor="courses"
+              className="block text-md font-medium text-gray-700"
+            >
+              Select Required Courses
+            </label>
             <Select
+              id="courses"
               options={options}
               isMulti
               value={selectedCourses}
               onChange={setSelectedCourses}
               className="basic-multi-select border border-gray-400 rounded-md"
               classNamePrefix="select"
+              aria-labelledby="courses-label"
             />
           </div>
 
           {/* Preferred Days */}
           <div>
-            <label className="block text-md font-medium text-gray-700">Preferred Days</label>
+            <label
+              htmlFor="preferred_days"
+              className="block text-md font-medium text-gray-700"
+            >
+              Preferred Days
+            </label>
             <input
+              id="preferred_days"
               className="p-2 border border-gray-400 rounded-md bg-white w-full outline-none"
               type="text"
               placeholder="Preferred days (e.g., Monday, Wednesday)"
               required
               name="preferred_days"
+              aria-required="true"
             />
           </div>
 
           {/* Additional Notes */}
           <div>
-            <label className="block text-md font-medium text-gray-700">Additional Notes</label>
+            <label
+              htmlFor="notes"
+              className="block text-md font-medium text-gray-700"
+            >
+              Additional Notes
+            </label>
             <textarea
+              id="notes"
               className="w-full p-2 border border-gray-400 rounded-md bg-white outline-none"
-              rows="4"
+              rows={4}
               placeholder="Additional notes"
               name="notes"
             />
@@ -132,13 +191,17 @@ const Form = () => {
 
         {/* Submit Button */}
         <button
-          className="py-3 px-8 bg-black text-white rounded-full mx-auto block hover:bg-black/80"
+          className="py-3 px-8 bg-black text-white rounded-full mx-auto block hover:bg-black/80 focus:ring focus:ring-gray-400"
           type="submit"
+          aria-label="Submit Form"
         >
-          Submit now
+          Submit Now
         </button>
 
-        <p className="text-center mt-4">{result}</p>
+        {/* Form Status */}
+        <p className="text-center mt-4" role="status" aria-live="polite">
+          {result}
+        </p>
       </form>
     </>
   );

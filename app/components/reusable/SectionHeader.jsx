@@ -1,28 +1,34 @@
 "use client";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 
-
-const SectionHeader = ({ subtitle, title,align="items-center", textAlign="text-center" }) => {
+const SectionHeader = ({
+  subtitle,
+  title,
+  align = "items-center",
+  textAlign = "text-center",
+}) => {
   return (
     <div className={`flex flex-col ${align} justify-center`}>
-      <motion.h4 
-      initial={{ y: 0, opacity: 0 }}
-     whileInView={{ y: -20, opacity: 1 }}
-     transition={{ duration: 0.6, delay: 0.4 }}   
-     className=" mb-2 text-lg font-Prata ">{subtitle}
-      </motion.h4>
+      <motion.h3
+        initial={{ y: 0, opacity: 0 }}
+        whileInView={{ y: -20, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+        className=" mb-2 text-lg font-Prata "
+      >
+        {subtitle}
+      </motion.h3>
 
-    <motion.h2 
-     initial={{ y: -20, opacity: 0 }}
-     whileInView={{ y: 0, opacity: 1 }}
-     transition={{ duration: 0.8, delay: 0.5 }}    
-     className={`font-Prata inline-block 
+      <motion.h2
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        className={`font-Prata inline-block 
      lg:text-5xl text-4xl ${textAlign}`}
-     >
-      {title}
-  </motion.h2>
-      </div>
-  )
-}
+      >
+        {title}
+      </motion.h2>
+    </div>
+  );
+};
 
-export default SectionHeader
+export default SectionHeader;

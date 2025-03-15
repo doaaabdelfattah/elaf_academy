@@ -59,10 +59,14 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           } `}
         >
           <li className="slide-up-hover">
-            <a className="menu-style" href="#top">Home</a>
+            <a className="menu-style" href="#top">
+              Home
+            </a>
           </li>
           <li className="slide-up-hover">
-            <a className="menu-style"  href="#about-us">About us</a>
+            <a className="menu-style" href="#about-us">
+              About us
+            </a>
           </li>
           <li className="slide-up-hover">
             <a className="menu-style" href="#services">
@@ -75,7 +79,9 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             </a>
           </li>
           <li className="slide-up-hover">
-            <a className="menu-style" href="#contact">Contact us</a>
+            <a className="menu-style" href="#contact">
+              Contact us
+            </a>
           </li>
           <li className="slide-up-hover">
             <a className="menu-style" href="#faq">
@@ -84,52 +90,58 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           </li>
         </ul>
 
-        <button className="lg:hidden">
+        <button
+          className="lg:hidden"
+          aria-label="open side menu"
+          title="open menu"
+        >
           <GiHamburgerMenu onClick={openMenu} size={25} className="" />
         </button>
 
         {/*================ Mobile Menu ====================== */}
-        <ul
+        <div
           ref={sideMenuRef}
           className="flex lg:hidden flex-col gap-4 py-10 px-10 fixed -right-64 h-screen w-64 z-50 bg-gray-50 transition duration-700 bottom-0 top-0 dark:bg-darkHover "
         >
-          <div
+          <span
             className="absolute right-6 top-6 hover:opacity-60 duration-75 transition-opacity"
             onClick={closeMenu}
           >
             <IoMdCloseCircleOutline size={20} className="cursor-pointer" />
-          </div>
-          <li className="slide-up-hover">
-            <a className="menu-style" onClick={closeMenu}>
-              Home
-            </a>
-          </li>
-          <li className="slide-up-hover">
-            <a className="menu-style" onClick={closeMenu}>
-              About us
-            </a>
-          </li>
-          <li className="slide-up-hover">
-            <a className="menu-style" href="#services" onClick={closeMenu}>
-              Services
-            </a>
-          </li>
-          <li className="slide-up-hover">
-            <a className="menu-style" href="#pricing" onClick={closeMenu}>
-              Our Packages
-            </a>
-          </li>
-          <li className="slide-up-hover">
-            <a className="menu-style" href="#contact" onClick={closeMenu}>
-              Contact us
-            </a>
-          </li>
-          <li className="slide-up-hover">
-            <a className="menu-style" href="#faq" onClick={closeMenu}>
-              FAQ
-            </a>
-          </li>
-        </ul>
+          </span>
+          <ul>
+            <li className="slide-up-hover">
+              <a className="menu-style" href="#top" onClick={closeMenu}>
+                Home
+              </a>
+            </li>
+            <li className="slide-up-hover">
+              <a className="menu-style" href="#about-us" onClick={closeMenu}>
+                About us
+              </a>
+            </li>
+            <li className="slide-up-hover">
+              <a className="menu-style" href="#services" onClick={closeMenu}>
+                Services
+              </a>
+            </li>
+            <li className="slide-up-hover">
+              <a className="menu-style" href="#pricing" onClick={closeMenu}>
+                Our Packages
+              </a>
+            </li>
+            <li className="slide-up-hover">
+              <a className="menu-style" href="#contact" onClick={closeMenu}>
+                Contact us
+              </a>
+            </li>
+            <li className="slide-up-hover">
+              <a className="menu-style" href="#faq" onClick={closeMenu}>
+                FAQ
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </>
   );

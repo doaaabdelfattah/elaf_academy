@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import SectionHeader from "./reusable/SectionHeader";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 const AboutUs = () => {
   return (
     <div className="section-separate" id="about-us">
@@ -26,16 +26,23 @@ const AboutUs = () => {
 
         {/* Right Section - Text */}
         <div className="lg:w-1/2 w-full flex flex-col items-start gap-5">
-          <SectionHeader title="Learn the Qur'an with Ease" subtitle="Welcome To Our Academy" align={"items-start"} textAlign={"text-left"}/>
+          <SectionHeader
+            title="Learn Qur'an with Ease"
+            subtitle="Welcome To Our Academy"
+            align={"items-start"}
+            textAlign={"text-left"}
+          />
 
-          
-          <motion.p       
-          initial={{ x: 20, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.7 }}    
-          className="text-lg mt-4 leading-loose tracking-wider">
-           Our academy offers a structured curriculum covering Quran recitation (Tajweed), memorization (Hifz), and Islamic studies, ensuring that students develop a deep understanding of the Quran and its teachings. Whether you are a beginner or looking to refine your recitation skills, our personalized learning approach caters to your needs.<br/>
-By embracing modern technology, we connect students with qualified scholars through one-on-one sessions, making Quranic education accessible to individuals across the globe. Our goal is to inspire a love for the Quran and Islamic knowledge while maintaining the traditional values of respect, patience, and dedication in learning.
+          <motion.p
+            initial={{ x: 20, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+            className="text-lg mt-4 leading-loose tracking-wider"
+          >
+            Learn Quran online with expert teachers through interactive and
+            personalized lessons. We offer Quran recitation, Tajweed, Hifz, and
+            Islamic studies for all ages. <br />
+            Join us today and start your Quran journey.
           </motion.p>
         </div>
       </div>
