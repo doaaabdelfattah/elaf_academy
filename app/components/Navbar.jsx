@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdCloseCircleOutline } from "react-icons/io";
@@ -31,25 +30,18 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             : "one-edge-shadow"
         } `}
       >
-        <a href="#top">
-          {isScroll ? (
-            <Image
-              src="/subtitle.png"
-              width={220}
-              height={220}
-              alt="logo"
-              className="p-2 "
-            />
-          ) : (
-            <Image
-              src="/main-logo.png"
-              width={400}
-              height={400}
-              alt="logo"
-              className="w-full max-w-[280px] sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-auto p-1"
-            />
-          )}
+        <a href="#top" className="flex justify-center items-center">
+          <img
+            src={isScroll ? "/subtitle.png" : "/main-logo.png"}
+            alt="logo"
+            className={`h-auto p-2 transition-all duration-300 ${
+              isScroll
+                ? "w-[200px] sm:w-[200px] md:w-[220px]" // Smaller size when scrolling
+                : "w-[300px] sm:w-[280px] md:w-[320px] lg:w-[360px] xl:w-[420px]" // Larger size normally
+            }`}
+          />
         </a>
+
         <ul
           className={`hidden lg:flex items-center gap-6 lg:gap-8 
           text-lg py-4 ${

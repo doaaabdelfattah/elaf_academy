@@ -5,16 +5,22 @@ import { motion } from "motion/react";
 const Hero = () => {
   return (
     <div
-      className="h-[100dvh] relative bg-[url('/Hero-image.jpg')] bg-cover bg-center md:bg-fixed"
+      className="min-h-screen overflow-hidden flex items-center justify-center relative"
       id="home"
     >
+      <img
+        src="/Hero-image.jpg"
+        alt="Hero Background"
+        className="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
+      />
       {/* Black overlay */}
       <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
 
       {/* Content Wrapper */}
-      <div className="relative h-full flex items-center justify-center flex-col md:flex-row z-10">
+      <div className="h-full flex items-center justify-center flex-col z-10">
         {/* Right Section - Text */}
-        <div className="w-full mx-auto flex flex-col max-sm:gap-2 gap-4 text-center text-white  md:pt-0 max-sm:px-3">
+        <div className=" flex flex-col max-sm:gap-2 gap-4 text-center text-white  md:pt-0 max-sm:px-3">
           <motion.p
             initial={{ y: -20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}

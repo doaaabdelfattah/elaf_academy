@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import SectionHeader from "./reusable/SectionHeader";
 import { motion } from "motion/react";
 const AboutUs = () => {
@@ -14,7 +13,7 @@ const AboutUs = () => {
             <div className="absolute w-full h-full bg-mainGreen rounded-[50px] left-[-20px] top-3 bottom-0 clip-arch"></div>
 
             {/* Main Image */}
-            <Image
+            <img
               src="/Quraan-1.jpg" // Replace with your image path
               alt="Qur'an"
               width={500}
