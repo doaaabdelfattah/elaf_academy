@@ -9,7 +9,7 @@ const Hero = () => {
       id="home"
     >
       <img
-        src="/Hero-image.jpg"
+        src="/Hero-image.webp"
         alt="Hero Background"
         className="absolute inset-0 w-full h-full object-cover"
         loading="eager"
