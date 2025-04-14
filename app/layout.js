@@ -40,6 +40,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="preload" as="image" href="/Hero-image.webp" />
+      </head>
+
       <body
         className={`${outfit.className} ${ovo.className} ${prata.className} antialiased leading-8`}
       >
